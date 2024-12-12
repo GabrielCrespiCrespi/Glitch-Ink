@@ -1,10 +1,21 @@
 :root {
-    --colorPaleta1: #bbf7e4;
-    --colorPaleta2: #008c60;
-    --colorPaleta3: #0b6347;
-    --colorPaleta4: #f93bd2;
-    --colorPaleta4: #f93bd2;
-    --colorPaleta4: #f93bd2;
+    --blancClar:  #ebebeb;
+    --gris: #a0a0a0;    
+    --negrot: #141414;
+
+    --cacaClara: #f0e68c;
+    --or: #ffd700;
+    --taronjaOscur: #ff8c00;
+
+    --rosaClar: #f2a0e1;
+    --rosaFucsia: #f93bd2;
+    -lila: #8402a5;
+
+    --turquesa: #24ffda;
+    --verdeMentaClaro: #bbf7e4;
+    --verdEsmeralda: #008c60;
+    --verdPiOscuro: #0b6347;
+    --verdMesOscur: #07231b;
 }
 
 body {
@@ -22,6 +33,8 @@ body {
 
 .header {
     grid-area: 1 / 1 / 2 / 6;
+    width: 100%;
+    background-color: var(--verdPiOscuro);
 }
 
 .body {

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="54.072216mm"
+   height="38.957691mm"
+   viewBox="0 0 54.072216 38.957691"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-227.1402,-73.867883)">
+    <rect
+       style="fill:#008c60;fill-opacity:1;stroke:none;stroke-width:0.958964;stroke-linecap:round;stroke-linejoin:round"
+       id="rect1"
+       width="267.01346"
+       height="42.740685"
+       x="213.6725"
+       y="71.976387" />
+    <g
+       id="g17"
+       transform="matrix(1.1033068,0,0,1.1033068,223.73118,-29.656358)">
+      <g
+         id="g13"
+         transform="translate(-22.622574,-16.476557)">
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:19.7556px;font-family:Monospace;-inkscape-font-specification:'Monospace Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#bbf7e4;fill-opacity:1;stroke:none;stroke-width:1.089;stroke-linecap:round;stroke-linejoin:round"
+           x="30.096634"
+           y="124.70934"
+           id="text13-2"><tspan
+             id="tspan13-0"
+             style="stroke-width:1.089"
+             x="30.096634"
+             y="124.70934">P</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:9.87778px;font-family:Monospace;-inkscape-font-specification:'Monospace Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#bbf7e4;fill-opacity:1;stroke:none;stroke-width:1.089;stroke-linecap:round;stroke-linejoin:round"
+           x="54.57782"
+           y="124.70934"
+           id="text13"><tspan
+             id="tspan13"
+             style="font-size:9.87778px;stroke-width:1.089"
+             x="54.57782"
+             y="124.70934">rotocol</tspan></text>
+      </g>
+      <g
+         id="g15"
+         transform="translate(33.737711,-16.476557)">
+        <g
+           id="g16"
+           transform="translate(-47.617833,18.863014)">
+          <text
+             xml:space="preserve"
+             style="font-weight:bold;font-size:19.7556px;font-family:Monospace;-inkscape-font-specification:'Monospace Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#bbf7e4;fill-opacity:1;stroke:none;stroke-width:1.089;stroke-linecap:round;stroke-linejoin:round"
+             x="30.096634"
+             y="124.70934"
+             id="text14"><tspan
+               id="tspan14"
+               style="stroke-width:1.089"
+               x="30.096634"
+               y="124.70934">T</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-weight:bold;font-size:9.87778px;font-family:Monospace;-inkscape-font-specification:'Monospace Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#bbf7e4;fill-opacity:1;stroke:none;stroke-width:1.089;stroke-linecap:round;stroke-linejoin:round"
+             x="46.640312"
+             y="124.70934"
+             id="text15"><tspan
+               id="tspan15"
+               style="font-size:9.87778px;stroke-width:1.089"
+               x="46.640312"
+               y="124.70934">hyra</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
