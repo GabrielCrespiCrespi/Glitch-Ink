@@ -6,11 +6,11 @@
     --colorPaleta4: #f93bd2;
     --colorPaleta4: #f93bd2;
 }
-body{
+
+body {
     width: 100%;
     margin: 0%;
 }
-
 
 .grid {
     display: grid;
@@ -40,3 +40,36 @@ body{
     grid-area: 5 / 1 / 6 / 5;
 }
 
+#micontador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#micontador .num {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 0 8px;
+}
+
+
+#micontador .num .dig {
+    overflow: hidden;
+    padding: 10px;
+}
+
+
+#micontador .num .dig span {
+    font-family: "Arial Black";
+    font-size: 4rem;
+    font-weight: 800px;
+    position: relative;
+}
+
+
+#micontador .label {
+    text-align: center;
+    border-top: 1px solid black;
+}
