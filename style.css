@@ -39,6 +39,7 @@ body {
 
 .body {
     grid-area: 2 / 2 / 5 / 4;
+    padding-top: 50px;
 }
 
 .aside_esquerra {
