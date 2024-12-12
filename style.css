@@ -87,3 +87,13 @@ body {
     text-align: center;
     border-top: 1px solid black;
 }
+
+@font-face{
+    font-family: "DragonHunter";
+    src: url("/recursos/fonts/DragonHunter-9Ynxj.otf")
+    format("otf");
+}
+
+h1{
+    font-family: "DragonHunter";
+}
