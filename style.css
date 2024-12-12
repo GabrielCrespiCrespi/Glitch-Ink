@@ -33,6 +33,8 @@ body{
 
 .header {
     grid-area: 1 / 1 / 2 / 6;
+    width: 100%;
+    background-color: var(--verdPiOscuro);
 }
 
 .body {
