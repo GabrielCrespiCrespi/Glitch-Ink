@@ -1,6 +1,34 @@
-:root{
+:root {
     --colorPaleta1: #bbf7e4;
     --colorPaleta2: #008c60;
     --colorPaleta3: #0b6347;
     --colorPaleta4: #f93bd2;
-} 
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 2fr) 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.header {
+    grid-area: 1 / 1 / 2 / 6;
+}
+
+.body {
+    grid-area: 2 / 2 / 5 / 4;
+}
+
+.aside_esquerra {
+    grid-area: 2 / 1 / 5 / 2;
+}
+
+.aside_dreta {
+    grid-area: 2 / 4 / 5 / 5;
+}
+
+.footer {
+    grid-area: 5 / 1 / 6 / 5;
+}
