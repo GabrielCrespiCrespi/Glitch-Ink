@@ -91,9 +91,21 @@ body {
 @font-face{
     font-family: "DragonHunter";
     src: url("/recursos/fonts/DragonHunter-9Ynxj.otf")
-    format("otf");
+    format("truetype");
+}
+
+@font-face{
+    font-family: "lletreFuturista";
+    src: url("/recursos/fonts/Orbitron-VariableFont_wght.ttf")
+    format("truetype");
 }
 
 h1{
     font-family: "DragonHunter";
+}
+
+h2{
+    background-color: yellow;
+    font-family: "lletreFuturista";
+    color: var(--rosaFucsia);
 }
