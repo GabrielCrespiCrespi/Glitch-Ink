@@ -63,40 +63,6 @@ body {
     grid-area: 5 / 1 / 6 / 5;
 }
 
-#micontador {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-#micontador .num {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
-    margin: 0 8px;
-}
-
-
-#micontador .num .dig {
-    overflow: hidden;
-    padding: 10px;
-}
-
-
-#micontador .num .dig span {
-    font-family: "Arial Black";
-    font-size: 4rem;
-    font-weight: 800px;
-    position: relative;
-}
-
-
-#micontador .label {
-    text-align: center;
-    border-top: 1px solid black;
-}
-
 @font-face{
     font-family: "DragonHunter";
     src: url("/recursos/fonts/DragonHunter-9Ynxj.otf")
@@ -118,3 +84,66 @@ h2{
     font-family: "lletreFuturista";
     color: var(--rosaFucsia);
 }
+
+.countdown-timer {
+    animation: fadeIn 2s ease-in-out;
+    align-items: center;
+    background-color: #131a2b;
+    border-radius: 0px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 8px;
+    text-align: left;
+    text-transform: uppercase;
+    width: 100%;
+  }
+  .countdown-timer .countainer-ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .countdown-timer-ul {
+    border-radius: 25px;
+    color: #000;
+    margin: auto auto 15px auto;
+    position: relative;
+    text-align: center;
+    transition: opacity 0.7s ease-in-out;
+    position: relative;
+    width: 40%;
+  }
+  .countdown-timer-ul .deadline-label {
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 5px;
+    margin-right: 10%;
+    text-align: right;
+    text-transform: uppercase;
+  }
+  .countdown-timer .date-item {
+    background-color: #fafafa52;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 88px;
+  }
+  .countdown-timer ul {
+    margin-bottom: 0px;
+    padding: 0px;
+  }
+  .countdown-timer ul li span {
+    display: block;
+    font-size: 3rem;
+  }
+  li {
+    display: inline-block;
+    font-size: 1em;
+    list-style-type: none;
+    padding: 0.5em;
+    text-transform: uppercase;
+  }
+  @keyframes fadeIn {
+      0% {opacity: 0;}
+      100% {opacity: 1;}
+  }
