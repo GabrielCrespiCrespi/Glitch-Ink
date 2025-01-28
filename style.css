@@ -20,6 +20,8 @@
 
 header{
     color: var(--verdeMentaClaro);
+    width: 100%;
+    background-color: pink;
 }
 
 body {
