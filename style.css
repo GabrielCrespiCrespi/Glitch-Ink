@@ -24,6 +24,13 @@ header{
     background-color: pink;
 }
 
+.header {
+    grid-area: 1 / 1 / 2 / 6;
+    width: 100%;
+    background-color: var(--verdEsmeralda);
+    display: flex;
+}
+
 body {
     background-color: var(--verdPiOscuro);
     width: 100%;
@@ -37,43 +44,6 @@ body {
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-}
-
-.header {
-    grid-area: 1 / 1 / 2 / 6;
-    position: fixed;
-    width: 100%;
-    background-color: var(--verdEsmeralda);
-    display: flex;
-    height: 10%;
-}
-
-.header .logo{
-    margin: 1rem;
-    margin-left: 5%;
-}
-
-.header .nav{
-    background-color: yellow;
-    width: 65%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
-}
-
-.header .nav .navList{
-    margin-top: 0;
-    width: 100%;
-    background-color: red;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    font-size: 3rem;
-}
-
-.header .nav .navList .icon{
-    height: 50px;
 }
 
 .body {
