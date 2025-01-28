@@ -57,6 +57,7 @@ const expirationDate = 'May 28, 2025 23:59:59'; // Define or get your date
         }
     });
 
+    
     const volumeControl = document.getElementById('volumeControl');
 
     volumeControl.addEventListener('input', () => {
