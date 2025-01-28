@@ -18,6 +18,10 @@
     --verdMesOscur: #07231b;
 }
 
+header{
+    color: var(--verdeMentaClaro);
+}
+
 body {
     background-color: var(--verdPiOscuro);
     width: 100%;
