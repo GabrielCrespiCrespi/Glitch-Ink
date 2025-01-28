@@ -47,7 +47,6 @@ const expirationDate = 'May 28, 2025 23:59:59'; // Define or get your date
     const audioEpic = document.getElementById('audioEpic');
     const muteButton = document.getElementById('muteButton');
 
-    <button id="muteButton">Deshabilitar Audio</button>
     muteButton.addEventListener('click', () => {
         if (audioEpic.muted) {
           audioEpic.muted = false;
