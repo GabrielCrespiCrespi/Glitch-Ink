@@ -43,3 +43,16 @@ const expirationDate = 'May 28, 2025 23:59:59'; // Define or get your date
     let countdownInterval = null;
     updateCountdown();    
     countdownInterval = setInterval(updateCountdown, 1000);
+
+    const audioEpic = document.getElementById('audioEpic');
+    const muteButton = document.getElementById('muteButton');
+
+    muteButton.addEventListener('click', () => {
+        if (audioEpic.muted) {
+          audioEpic.muted = false;
+            muteButton.textContent = 'Deshabilitar Audio';
+        } else {
+            audioEpic.muted = true;
+            muteButton.textContent = 'Habilitar Audio';
+        }
+    });
