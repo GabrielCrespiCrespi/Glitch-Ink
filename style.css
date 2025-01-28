@@ -48,13 +48,22 @@ h1{
 }
 
 .body nav{
-  height: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
   background-color: #8402a5;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .body nav ol{
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.bo
 
 .grid {
     display: grid;
