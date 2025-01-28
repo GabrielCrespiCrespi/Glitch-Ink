@@ -22,19 +22,17 @@
 
 body {
     background-color: var(--verdPiOscuro);
-    width: 100%;
+    width: 100%;    
     height: 100%;
     margin: 0%;
 }
-
-
 
 header{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  grid-area: 1 / 1 / 2 / 6;
+  grid-area: 1 / 1 / 2 / 4;
   width: 100%;
   color: var(--verdeMentaClaro);
   background-color: var(--verdEsmeralda);
@@ -46,32 +44,41 @@ header{
 h1{
   font-family: "DragonHunter";
   margin: 0;
-  font-size: 5rem;
+  font-size: 5.5rem;
+}
+
+.body nav{
+  height: 50rem;
+  background-color: #8402a5;
+}
+
+.body nav ol{
+  display: flex;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr repeat(2, 2fr) 1fr;
-    grid-template-rows: auto repeat(4, 1fr);
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 2fr 50fr 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
 
 .body {
-    grid-area: 2 / 2 / 5 / 4;
-    padding-top: 50px;
+    grid-area: 2 / 2 / 3 / 3;
+
 }
 
 .aside_esquerra {
-    grid-area: 2 / 1 / 5 / 2;
+    grid-area: 2 / 1 / 3 / 2;
 }
 
 .aside_dreta {
-    grid-area: 2 / 4 / 5 / 5;
+    grid-area: 3 / 1 / 4 / 4;
 }
 
 .footer {
-    grid-area: 5 / 1 / 6 / 5;
+    grid-area: 2 / 3 / 3 / 4;
 }
 
 @font-face{
