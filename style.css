@@ -13,12 +13,13 @@
 
     --turquesa: #24ffda;
     --verdeMentaClaro: #bbf7e4;
-    --verdEsmeralda: #008c60;
+    --verdEsmeralda: #12b481;
     --verdPiOscuro: #0b6347;
     --verdMesOscur: #07231b;
 }
 
 body {
+    background-color: var(--verdPiOscuro);
     width: 100%;
     height: 100%;
     margin: 0%;
