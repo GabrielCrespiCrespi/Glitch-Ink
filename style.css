@@ -18,18 +18,7 @@
     --verdMesOscur: #07231b;
 }
 
-header{
-    color: var(--verdeMentaClaro);
-    width: 100%;
-    background-color: pink;
-}
 
-.header {
-    grid-area: 1 / 1 / 2 / 6;
-    width: 100%;
-    background-color: var(--verdEsmeralda);
-    display: flex;
-}
 
 body {
     background-color: var(--verdPiOscuro);
@@ -38,10 +27,32 @@ body {
     margin: 0%;
 }
 
+
+
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: 1 / 1 / 2 / 6;
+  width: 100%;
+  color: var(--verdeMentaClaro);
+  background-color: var(--verdEsmeralda);
+  display: flex;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+h1{
+  font-family: "DragonHunter";
+  margin: 0;
+  font-size: 5rem;
+}
+
 .grid {
     display: grid;
     grid-template-columns: 1fr repeat(2, 2fr) 1fr;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: auto repeat(4, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
@@ -73,10 +84,6 @@ body {
     font-family: "lletreFuturista";
     src: url("/recursos/fonts/Orbitron-VariableFont_wght.ttf")
     format("truetype");
-}
-
-h1{
-    font-family: "DragonHunter";
 }
 
 h2{
