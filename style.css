@@ -10,6 +10,7 @@
   --rosaClar: #f2a0e1;
   --rosaFucsia: #f93bd2;
   --lila: #8402a5;
+  --rosaChilero: #c61ec3;
 
   --turquesa: #24ffda;
   --verdeMentaClaro: #bbf7e4;
@@ -183,9 +184,10 @@ audio {
 }
 
 button {
-  margin: 5px;
-  padding: 10px;
+  margin: 3%;
+  padding: 7px;
   font-size: 16px;
+  background-color: var(--rosaChilero);
 }
 
 input[type="range"] {
