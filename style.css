@@ -10,7 +10,7 @@
   --rosaClar: #f2a0e1;
   --rosaFucsia: #f93bd2;
   --lila: #8402a5;
-  --rosaChilero: #c61ec3;
+  --rosaChilero: #c61ec3aa;
 
   --turquesa: #24ffda;
   --verdeMentaClaro: #bbf7e4;
@@ -26,6 +26,7 @@ body {
   width: 100%;    
   height: 100%;
   margin: 0%;
+  font-family: DragonHunter;
 }
 
 header{
@@ -112,7 +113,7 @@ h2{
   background-color:var(--verdEsmeralda30);
   border-radius: 0px;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 500;
   padding: 8px;
   text-align: left;
   text-transform: uppercase;
@@ -150,6 +151,7 @@ h2{
   text-align: center;
   font-size: 1.2rem;
   width: 88px;
+  list-style-type: none;
 }
 
 .countdown-timer ul {
@@ -192,4 +194,29 @@ button {
 
 input[type="range"] {
   width: 80%;
+}
+
+.capsa_link{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 30px;
+}
+
+.link_capsa{
+  border: 3px solid var(--verdeMentaClaro);
+  border-radius: 3cap;
+  margin: 5px;
+  text-align: center;
+}
+
+.link{
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 70px;
+  padding-right: 70px;
+  color: var(--verdeMentaClaro);
+  text-decoration: none;
+  font-size: 20px;
+  background-color: var(--rosaChilero);
 }
