@@ -177,6 +177,24 @@ li {
   100% {opacity: 1;}
 }
 
+.audio-controls {
+  text-align: center;
+}
+
+audio {
+  width: 80%;
+}
+
+button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type="range"] {
+  width: 80%;
+}
+
 .capsa_link{
   display: flex;
   justify-content: space-evenly;
