@@ -82,3 +82,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     const audio = document.getElementById('audio');
 });
+
+function comprovant(){
+  let now = new Date().getTime();    
+  let timeToLive = deadline - now;
+
+  if(timeToLive > 0){
+    alert("Beneit");
+  } else{
+    window.location.href('https://www.youtube.com/watch?v=cKux39Y0fxw');
+  };
+};
