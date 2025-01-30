@@ -90,6 +90,7 @@ function comprovant(){
   if(timeToLive > 0){
     alert("Beneit");
   } else{
-    window.location.href('https://www.youtube.com/watch?v=cKux39Y0fxw');
+    window.location.href=
+      ""; //Aqui anira u link de la pagina web
   };
 };
