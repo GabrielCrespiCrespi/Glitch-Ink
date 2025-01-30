@@ -63,3 +63,20 @@ const expirationDate = 'May 28, 2025 23:59:59'; // Define or get your date
     volumeControl.addEventListener('input', () => {
       audioEpic.volume = volumeControl.value;
     });
+
+    const audio = document.getElementById('audio');
+const playButton = document.getElementById('play');
+const pauseButton = document.getElementById('pause');
+const volumeControl = document.getElementById('volume');
+
+playButton.addEventListener('click', () => {
+    audio.play();
+});
+
+pauseButton.addEventListener('click', () => {
+    audio.pause();
+});
+
+volumeControl.addEventListener('input', () => {
+    audio.volume = volumeControl.value;
+});
