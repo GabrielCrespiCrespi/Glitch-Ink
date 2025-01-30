@@ -44,8 +44,8 @@ const expirationDate = 'May 28, 2025 23:59:59'; // Define or get your date
     updateCountdown();    
     countdownInterval = setInterval(updateCountdown, 1000);
 
-    const audioEpic = document.getElementById('audioEpic');
-    const muteButton = document.getElementById('muteButton');
+    
+   /* const muteButton = document.getElementById('muteButton');
 
     muteButton.addEventListener('click', () => {
         if (audioEpic.muted) {
@@ -55,26 +55,30 @@ const expirationDate = 'May 28, 2025 23:59:59'; // Define or get your date
             audioEpic.muted = true;
             muteButton.textContent = 'Habilitar Audio';
         }
-    });
+    });*/
+
+    
 
 
-    volumeControl.addEventListener('input', () => {
+document.addEventListener("DOMContentLoaded", (event) => {
+  console.log("DOM fully loaded and parsed");
+  const volumeControl = document.getElementById('volume');
+  const audioEpic = document.getElementById('audioEpic');
+  const muteButton = document.getElementById('muteButton');
+
+    volumeControl.addEventListener('change', () => {
+      console.log(volumeControl.value);
       audioEpic.volume = volumeControl.value;
+      muteButton.addEventListener('click', () => {
+          if (audioEpic.muted) {
+            audioEpic.muted = false;
+              muteButton.textContent = 'Deshabilitar Audio';
+          } else {
+              audioEpic.muted = true;
+              muteButton.textContent = 'Habilitar Audio';
+          }
+      });     
     });
 
     const audio = document.getElementById('audio');
-const playButton = document.getElementById('play');
-const pauseButton = document.getElementById('pause');
-
-
-playButton.addEventListener('click', () => {
-    audio.play();
-});
-
-pauseButton.addEventListener('click', () => {
-    audio.pause();
-});
-
-volumeControl.addEventListener('input', () => {
-    audio.volumeControl = volumeControl.value;
 });
