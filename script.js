@@ -94,3 +94,8 @@ function comprovant(){
       ""; //Aqui anira u link de la pagina web
   };
 };
+
+function scrollToElement(event, id) {
+  event.preventDefault(); 
+  document.getElementById(id).scrollIntoView({ block: "center" });
+}
