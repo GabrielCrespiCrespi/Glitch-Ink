@@ -79,10 +79,14 @@ h1{
   align-items: center;
   flex-direction: column;
   padding: 0.2rem;
+  flex-grow: 1;
+  transition: flex-grow 1s;
+  cursor: pointer; 
 }
 
 .body nav ol li:hover{
   background-color: var(--verdeMentaClaro);
+  flex-grow: 1.4;
 }
 
 .body nav ol p{
@@ -359,7 +363,7 @@ input[type="range"] {
   display: flex;
   flex-direction: row;
   border-radius: 10px;
-  animation: 30s slide infinite linear;
+  animation: 25s slide infinite linear;
 }
 
 .card-list .card-item{
@@ -395,6 +399,7 @@ input[type="range"] {
 }
 
 .lore-container{
+  margin-bottom: 5rem;
   border: var(--verdMesOscur) solid 5px;
   border-radius: 15px;
 }
