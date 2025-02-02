@@ -97,7 +97,7 @@ h1{
  
 .grid {
   display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-columns:150px 1fr 150px;
   grid-template-rows: 2fr 50fr 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -129,12 +129,6 @@ h1{
   font-family: "lletreFuturista";
   src: url("/recursos/fonts/Orbitron-VariableFont_wght.ttf")
   format("truetype");
-}
-
-h2{
-  background-color: yellow;
-  font-family: "lletreFuturista";
-  color: var(--rosaFucsia);
 }
 
 .countdown-timer {
@@ -317,4 +311,82 @@ input[type="range"] {
 .tarjetaCarrusel > img {
   width: 100%;
   height: 100%;
+}
+
+.npcs-container{
+  display: flex;
+  margin-top: 30px;
+  background-color: var(--verdEsmeralda);
+  justify-self: center;
+  width: 78vw;
+  border-radius: 10px;
+}
+
+@keyframes slide {
+  from{
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.slider-wrapper{
+  box-sizing: border-box;
+  display: inline-flex;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  width:inherit;
+}
+
+.slider-wrapper:hover .card-list{
+  animation-play-state: paused;
+}
+
+.title{
+  justify-self: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 50px;
+  margin-top: 55px ;
+}
+.card-list{
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  animation: 30s slide infinite linear;
+}
+
+.card-list .card-item{
+  color: var(--verdeMentaClaro);
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  background: var(--verdMesOscur);
+}
+
+.card-list .card-item .character-image{
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.card-list .card-item .character-name{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  margin: 10px;
+}
+
+.card-list .card-item .character-type{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1.15rem;
+  margin: 14px 0;
 }
