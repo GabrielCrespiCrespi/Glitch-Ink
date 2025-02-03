@@ -479,3 +479,7 @@ input[type="range"] {
   background-color: var(--verdMesOscur);
   border-radius: 30px;
 }
+
+.comodi{
+  margin-top: 5rem;
+}
