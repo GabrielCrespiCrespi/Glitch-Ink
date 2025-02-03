@@ -42,7 +42,6 @@ header{
   width: 100%;
   color: var(--verdeMentaClaro);
   background-color: var(--verdEsmeralda);
-  display: flex;
   padding-top: 3rem;
   padding-bottom: 2rem;
 }
@@ -113,7 +112,7 @@ h1{
 .grid {
   display: grid;
   grid-template-columns:150px 1fr 150px;
-  grid-template-rows: 2fr 50fr 1fr;
+  grid-template-rows: 1fr 50fr 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
