@@ -100,16 +100,6 @@ function scrollToElement(event, id) {
   document.getElementById(id).scrollIntoView({ block: "center" });
 }
 
-// const btnPujar = document.querySelector("#btCapAdalt");
-
-// btnPujar.addEventListener("click", function () {
-//   window.scrollTo({
-//     top: 0,
-//     left: 0,
-//     behavior: "smooth"
-//   });
-// });
-
 let calcScrollValue = () => {
   let scrollProgress = document.getElementById("progress");
   let progressValue = document.getElementById("progress-value");
