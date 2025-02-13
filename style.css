@@ -1,6 +1,6 @@
 :root {
   --blancClar:  #ebebeb;
-  --gris: #a0a0a0;    
+  --gris: #a0a0a0;
   --negrot: #141414;
 
   --cacaClara: #f0e68c;
@@ -23,7 +23,7 @@
 
 body {
   background-color: var(--verdPiOscuro);
-  width: 100%;    
+  width: 100%;
   height: 100%;
   margin: 0%;
   font-family: DragonHunter;
@@ -122,11 +122,27 @@ nav li a{
   fill: #000;
   width: 2rem;
 }
- 
+
 .grid {
   display: grid;
   grid-template-columns:150px 1fr 150px;
+  grid-template-rows: 1fr 10fr 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.gridLlarg {
+  display: grid;
+  grid-template-columns:150px 1fr 150px;
   grid-template-rows: 1fr 50fr 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.gridMitja {
+  display: grid;
+  grid-template-columns:150px 1fr 150px;
+  grid-template-rows: 1fr 30fr 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
@@ -214,14 +230,6 @@ nav li a{
 .countdown-timer ul li span {
   display: block;
   font-size: 3rem;
-}
-
-li {
-  display: inline-block;
-  font-size: 1em;
-  list-style-type: none;
-  padding: 0.5em;
-  text-transform: uppercase;
 }
 
 @keyframes fadeIn {
@@ -526,4 +534,28 @@ input[type="range"] {
   place-items: center;
   font-size: 35px;
   color: var(--blancClar);
+}
+
+.requisits-container{
+  margin-top: 7rem;
+  margin-bottom: 5rem;
+  border: var(--verdMesOscur) solid 5px;
+  border-radius: 15px;
+}
+
+.requisits-container .requisits-box{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  padding: 80px;
+  padding-left: 130px;
+  line-height: 1.5;
+  background-color: var(--verdMesOscur);
+  color: var(--verdeMentaClaro);
+  border: var(--verdEsmeralda) solid 15px;
+  border-radius: 10px;
+}
+
+.requisits-container .requisits-box li{
+  width: 100%;
+  padding: 30px;
 }
