@@ -121,3 +121,49 @@ let calcScrollValue = () => {
 
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews {
+  margin-top: 20px;
+}
+
+.review {
+  background: #e9e9e9;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  resize: none;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+document.getElementById('reviewForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  let reviewText = document.getElementById('reviewText').value;
+  if (reviewText) {
+      let reviewDiv = document.createElement('div');
+      reviewDiv.className = 'review';
+      reviewDiv.textContent = reviewText;
+      document.getElementById('reviews').appendChild(reviewDiv);
+      document.getElementById('reviewText').value = '';
+  }
+});
+
+
+
