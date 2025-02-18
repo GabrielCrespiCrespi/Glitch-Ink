@@ -528,7 +528,7 @@ input[type="range"] {
   display: block;
   height: calc(100% - 15px);
   width: calc(100% - 15px);
-  background-color: var(--verdMesOscur);
+  background-color: var(--verdPiOscuro);
   border-radius: 50%;
   display: grid;
   place-items: center;
