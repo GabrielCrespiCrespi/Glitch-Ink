@@ -569,3 +569,37 @@ input[type="range"] {
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+.blog-container{
+  margin-top: 7rem;
+  margin-bottom: 5rem;
+  
+}
+
+.blog-container .blog-box{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  padding: 10px;
+  padding-left: 40px;
+  line-height: 1.5;
+  background-color: var(--verdEsmeralda);
+  color: var(--verdMesOscur);
+  border: var(--verdMesOscur) solid 10px;
+  border-radius: 15px;
+  height: 250px;
+  overflow-y: scroll;
+}
+
+* ::-webkit-scrollbar {
+  width: 12px;
+}
+
+* ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+* ::-webkit-scrollbar-thumb {
+  background-color: var(--lila);
+  border-radius: 15px;
+  border: 2px solid var(--lila);
+}
