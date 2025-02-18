@@ -125,7 +125,7 @@ nav li a{
 
 .grid {
   display: grid;
-  grid-template-columns:150px 1fr 150px;
+  grid-template-columns:150px 1fr 250px;
   grid-template-rows: 1fr 10fr 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -558,4 +558,14 @@ input[type="range"] {
 .requisits-container .requisits-box li{
   width: 100%;
   padding: 30px;
+}
+
+.foto_propaganda{
+  margin: 50px;
+  height: 150px;
+  width: 110px;
+  border: #000,2px,solid;
+  background-image: url(/recursos/imatges/mestre.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
