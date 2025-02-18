@@ -603,3 +603,32 @@ input[type="range"] {
   border-radius: 15px;
   border: 2px solid var(--lila);
 }
+
+.title-comentaris{
+  color: var(--rosaChilero);
+  justify-self: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 35px;
+  margin-top: 5px ;
+}
+
+.Comentaris-container{
+  margin-bottom: 5rem;
+  border: var(--verdMesOscur) solid 5px;
+  border-radius: 7px;
+}
+
+.Comentaris-container .Comentaris-box{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  padding: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+  line-height: 1.5;
+  background-color: var(--verdMesOscur);
+  color: var(--verdeMentaClaro);
+  border: var(--verdEsmeralda) solid 4px;
+  border-radius: 10px;
+}
+
