@@ -287,11 +287,12 @@ input[type="range"] {
 }
 
 #carrusel{
-  border: 5px solid var(--verdMesOscur);
   width: 100%;
 }
 
 .conteCarrusel{
+  border: 5px solid var(--verdPiOscuro);
+  border-radius: 15px;
   height: 200px;
   width: 100%;
   overflow: hidden;
@@ -338,6 +339,7 @@ input[type="range"] {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  margin-top: 20px;
 }
 
 .conteCarruselController > a{
@@ -631,4 +633,3 @@ input[type="range"] {
   border: var(--verdEsmeralda) solid 4px;
   border-radius: 10px;
 }
-
