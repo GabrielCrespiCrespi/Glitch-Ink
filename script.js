@@ -45,7 +45,7 @@ updateCountdown();
 countdownInterval = setInterval(updateCountdown, 1000);
 
     
-   /* const muteButton = document.getElementById('muteButton');
+  const muteButton = document.getElementById('muteButton');
 
     muteButton.addEventListener('click', () => {
         if (audioEpic.muted) {
@@ -55,7 +55,7 @@ countdownInterval = setInterval(updateCountdown, 1000);
             audioEpic.muted = true;
             muteButton.textContent = 'Habilitar Audio';
         }
-    });*/
+    });
 
     
 
