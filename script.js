@@ -1,34 +1,31 @@
-const expirationDate = 'May 28, 2025 23:59:59'; // Define or get your date
+const expirationDate = 'May 28, 2025 23:59:59'; // Aqui va la data final del timer
 let deadlineTime = new Date(expirationDate);
 
 deadlineTime.setDate(deadlineTime.getDate());
 let deadline = deadlineTime.getTime();
 
-// Function to update countdown timer
+// Funcio per actualitzar el timer
 function updateCountdown() {
   if (countdownInterval !== null) {
-    // Getting current time in required format
-    let now = new Date().getTime();    
+
+    let now = new Date().getTime();
     let timeToLive = deadline - now;
-      
-    // Getting value of days, hours, minutes, seconds
+
     let days = Math.floor(timeToLive / (1000 * 60 * 60 * 24));
     let hours = Math.floor((timeToLive % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     let minutes = Math.floor((timeToLive % (1000 * 60 * 60)) / (1000 * 60));
     let seconds = Math.floor((timeToLive % (1000 * 60)) / 1000);
-      
+
     let daysElements = document.getElementsByClassName("days");
     let hoursElements = document.getElementsByClassName("hours");
     let minutesElements = document.getElementsByClassName("minutes");
     let secondsElements = document.getElementsByClassName("seconds");
-    
-    // If you have many countdowns, you could fill all the tags using the classname
+
     Array.from(daysElements).forEach(el => el.innerHTML = days);
     Array.from(hoursElements).forEach(el => el.innerHTML = hours);
     Array.from(minutesElements).forEach(el => el.innerHTML = minutes);
     Array.from(secondsElements).forEach(el => el.innerHTML = seconds);
-      
-    // Output for over time
+
     if (timeToLive < 0) {
       countdownInterval && clearInterval(countdownInterval);
       Array.from(daysElements).forEach(el => el.innerHTML = 0);
@@ -38,68 +35,51 @@ function updateCountdown() {
     }
   }
 }
-    
-// To call defined function every second
+
+//per cridar a la funcio cada segon
 let countdownInterval = null;
-updateCountdown();    
+updateCountdown();
 countdownInterval = setInterval(updateCountdown, 1000);
 
-    
-  const muteButton = document.getElementById('muteButton');
+//funcion per silenciar la musica
+const audio = document.getElementById("audioEpic");
+const playPause = document.getElementById("playPause");
+const volume = document.getElementById("volume");
 
-    muteButton.addEventListener('click', () => {
-        if (audioEpic.muted) {
-          audioEpic.muted = false;
-            muteButton.textContent = 'Deshabilitar Audio';
-        } else {
-            audioEpic.muted = true;
-            muteButton.textContent = 'Habilitar Audio';
-        }
-    });
+function pausar() {
+  if (audio.paused) {
+    audio.play();
+    playPause.textContent = "⏸️";
+  } else {
+    audio.pause();
+    playPause.textContent = "▶️";
+  }
+};
 
-    
-
-
-document.addEventListener("DOMContentLoaded", (event) => {
-  console.log("DOM fully loaded and parsed");
-  const volumeControl = document.getElementById('volume');
-  const audioEpic = document.getElementById('audioEpic');
-  const muteButton = document.getElementById('muteButton');
-
-    volumeControl.addEventListener('change', () => {
-      console.log(volumeControl.value);
-      audioEpic.volume = volumeControl.value;
-      muteButton.addEventListener('click', () => {
-          if (audioEpic.muted) {
-            audioEpic.muted = false;
-              muteButton.textContent = 'Deshabilitar Audio';
-          } else {
-              audioEpic.muted = true;
-              muteButton.textContent = 'Habilitar Audio';
-          }
-      });     
-    });
-
-    const audio = document.getElementById('audio');
+volume.addEventListener("input", () => {
+  audio.volume = volume.value;
 });
 
-function comprovant(){
-  let now = new Date().getTime();    
+//funcio per anar al link de la pagina
+function comprovant() {
+  let now = new Date().getTime();
   let timeToLive = deadline - now;
 
-  if(timeToLive > 0){
+  if (timeToLive > 0) {
     alert("Beneit");
-  } else{
-    window.location.href=
+  } else {
+    window.location.href =
       ""; //Aqui anira u link de la pagina web
   };
 };
 
+//funcio per arreglar un problema amb el carrusel
 function scrollToElement(event, id) {
-  event.preventDefault(); 
+  event.preventDefault();
   document.getElementById(id).scrollIntoView({ block: "center" });
 }
 
+//funcions per calcular i mostrar el cercle de l'scroll
 let calcScrollValue = () => {
   let scrollProgress = document.getElementById("progress");
   let progressValue = document.getElementById("progress-value");
@@ -121,19 +101,4 @@ let calcScrollValue = () => {
 
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
-
-
-document.getElementById('reviewForm').addEventListener('submit', function(event) {
-  event.preventDefault();
-  let reviewText = document.getElementById('reviewText').value;
-  if (reviewText) {
-      let reviewDiv = document.createElement('div');
-      reviewDiv.className = 'review';
-      reviewDiv.textContent = reviewText;
-      document.getElementById('reviews').appendChild(reviewDiv);
-      document.getElementById('reviewText').value = '';
-  }
-});
-
-
 
