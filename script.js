@@ -47,12 +47,12 @@ const playPause = document.getElementById("playPause");
 const volume = document.getElementById("volume");
 
 function pausar() {
-  if (audio.paused) {
-    audio.play();
-    playPause.textContent = "⏸️";
-  } else {
+  if (!audio.paused) {
     audio.pause();
     playPause.textContent = "▶️";
+  } else {
+    audio.play();
+    playPause.textContent = "⏸️";
   }
 };
 
