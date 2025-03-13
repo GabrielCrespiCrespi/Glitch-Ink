@@ -630,13 +630,13 @@ nav li a{
   display: flex;
   align-items: center;
   gap: 10px;
-  background: #222;
+  background: var(--verdeMentaClaro30);
   padding: 10px;
   border-radius: 10px;
 }
 
 .boto-play {
-  background: #444;
+  background: var(--verdPiOscuro);
   color: white;
   border: none;
   padding: 5px 10px;
@@ -645,5 +645,5 @@ nav li a{
 }
 
 input[type="range"] {
-  width: 100px;
+  width: 100%;
 }

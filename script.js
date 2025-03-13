@@ -41,18 +41,18 @@ let countdownInterval = null;
 updateCountdown();
 countdownInterval = setInterval(updateCountdown, 1000);
 
-//funcion per silenciar la musica
+//funcion per silenciar la musica i canviar el volum
 const audio = document.getElementById("audioEpic");
 const playPause = document.getElementById("playPause");
 const volume = document.getElementById("volume");
 
 function pausar() {
-  if (!audio.paused) {
-    audio.pause();
-    playPause.textContent = "▶️";
-  } else {
+  if (audio.paused) {
     audio.play();
     playPause.textContent = "⏸️";
+  } else {
+    audio.pause();
+    playPause.textContent = "▶️";
   }
 };
 
