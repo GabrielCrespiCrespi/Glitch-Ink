@@ -40,26 +40,7 @@ function updateCountdown() {
 let countdownInterval = null;
 updateCountdown();
 countdownInterval = setInterval(updateCountdown, 1000);
-
-//funcion per silenciar la musica
-const audio = document.getElementById("audioEpic");
-const playPause = document.getElementById("playPause");
-const volume = document.getElementById("volume");
-
-function pausar() {
-  if (audio.paused) {
-    audio.play();
-    playPause.textContent = "⏸️";
-  } else {
-    audio.pause();
-    playPause.textContent = "▶️";
-  }
-};
-
-volume.addEventListener("input", () => {
-  audio.volume = volume.value;
-});
-
+ 
 //funcio per anar al link de la pagina
 function comprovant() {
   let now = new Date().getTime();
@@ -102,3 +83,21 @@ let calcScrollValue = () => {
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
 
+//funcion per silenciar la musica i canviar el volum
+const audio = document.getElementById("audioEpic");
+const playPause = document.getElementById("playPause");
+const volume = document.getElementById("volume");
+
+function pausar() {
+  if (audio.paused) {
+    audio.play();
+    playPause.textContent = "⏸️";
+  } else {
+    audio.pause();
+    playPause.textContent = "▶️";
+  }
+};
+
+volume.addEventListener("input", () => {
+  audio.volume = volume.value;
+});
