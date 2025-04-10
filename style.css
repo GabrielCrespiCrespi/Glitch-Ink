@@ -309,10 +309,6 @@ nav li a{
   justify-content: space-between;
 }
 
-.fletchesCarrusel > a{
-  font-size: 2em;
-}
-
 .itemCarrouselArrows > i:hover {
   cursor: pointer;
 }
@@ -320,6 +316,8 @@ nav li a{
 .fletchesCarrusel > a{
   text-decoration: none;
   scroll-behavior:auto;
+  font-size: 2em;
+  color: var(--blancGris);
 }
 
 .conteCarruselController{
@@ -332,6 +330,7 @@ nav li a{
 .conteCarruselController > a{
   padding: 5px;
   text-decoration: none;
+  color: var(--blancGris);
 }
 
 .tarjetaCarrusel > img {
@@ -494,7 +493,6 @@ nav li a{
   margin-top: 5rem;
 }
 
-
 #progress {
   position: fixed;
   bottom: 20px;
@@ -563,7 +561,7 @@ nav li a{
 }
 
 * ::-webkit-scrollbar {
-  width: 12px;
+  width: 6px;
 }
 
 * ::-webkit-scrollbar-track {
