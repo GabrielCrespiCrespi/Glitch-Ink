@@ -32,7 +32,7 @@
 }
 
 body {
-  background-color: var(--verdPiOscuro);
+  background-color: var(--grisOscur);
   width: 100%;
   height: 100%;
   margin: 0%;
@@ -50,8 +50,8 @@ header{
   align-items: center;
   grid-area: 1 / 1 / 2 / 4;
   width: 100%;
-  color: var(--verdeMentaClaro);
-  background-color: var(--verdEsmeralda);
+  color: var(--blancGris);
+  background-color: var(--grisBase);
   padding-top: 3rem;
   padding-bottom: 2rem;
 }
@@ -109,13 +109,13 @@ nav li a{
 }
 
 .body nav ol .active{
-  border: var(--verdeMentaClaro) solid 6px;
-  background-color: var(--verdEsmeralda);
+  border: var(--grisClas) solid 6px;
+  background-color: var(--grisBase);
   text-decoration: none;
 }
 
 .body nav ol li:hover{
-  background-color: var(--verdeMentaClaro);
+  background-color: var(--grisClas);
   flex-grow: 1.4;
 }
 
@@ -177,7 +177,7 @@ nav li a{
   margin-bottom: 50px;
   animation: fadeIn 2s ease-in-out;
   align-items: center;
-  background-color:var(--verdEsmeralda30);
+  background-color:var(--grisBase);
   border-radius: 0px;
   padding: 50px;
   text-align: left;
@@ -202,7 +202,7 @@ nav li a{
 }
 
 .countdown-timer-ul .deadline-label {
-  color: var(--verdeMentaClaro);
+  color: var(--grisClas);
   font-size: 40px;
   margin-top: 5px;
   margin-bottom: 25px;
@@ -213,7 +213,7 @@ nav li a{
 .countdown-timer .date-item {
   background-color: #fafafa52;
   border-radius: 2px;
-  color: var(--verdeMentaClaro);
+  color: var(--blancGris);
   text-align: center;
   font-size: 1.1rem;
   width: 88px;
@@ -246,7 +246,7 @@ nav li a{
 }
 
 .link_capsa{
-  border: 2px solid var(--verdeMentaClaro);
+  border: 2px solid var(--grisClas);
   border-radius: 50px;
   margin: 5px;
   text-align: center;
@@ -263,7 +263,7 @@ nav li a{
   padding-bottom: 2%;
   padding-left: 50px;
   padding-right: 50px;
-  color: var(--verdeMentaClaro);
+  color: var(--grisClas);
   font-size: 20px;
   cursor: pointer;
 }
@@ -278,7 +278,7 @@ nav li a{
 }
 
 .conteCarrusel{
-  border: 2px solid var(--verdPiOscuro);
+  border: 2px solid var(--grisOscur);
   border-radius: 15px;
   height: 200px;
   width: 100%;
@@ -341,7 +341,7 @@ nav li a{
 .npcs-container{
   display: flex;
   margin-top: 30px;
-  background-color: var(--verdEsmeralda);
+  background-color: var(--grisBase);
   justify-self: center;
   width: 78vw;
   border-radius: 10px;
@@ -363,7 +363,7 @@ nav li a{
   flex-wrap: nowrap;
   overflow: hidden;
   width:inherit;
-  border: solid var(--verdMesOscur) 2px;
+  border: solid var(--negrot) 2px;
   border-radius: 10px;
 }
 
@@ -376,7 +376,7 @@ nav li a{
 }
 
 .title{
-  color: var(--verdeMentaClaro);
+  color: var(--grisClas);
   justify-self: center;
   font-weight: bolder;
   font-size: 50px;
@@ -384,7 +384,7 @@ nav li a{
 }
 
 .subtitle{
-  color: var(--verdeMentaClaro);
+  color: var(--grisClas);
   justify-self: center;
   font-weight: bolder;
   font-size: 40px;
@@ -400,7 +400,7 @@ nav li a{
 }
 
 .card-list .card-item{
-  color: var(--verdeMentaClaro);
+  color: var(--grisClas);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -409,7 +409,7 @@ nav li a{
   margin: 10px;
   padding: 10px;
   border-radius: 8px;
-  background: var(--verdMesOscur);
+  background: var(--negrot);
   text-decoration: none;
 }
 
@@ -432,7 +432,7 @@ nav li a{
 
 .lore-container{
   margin-bottom: 5rem;
-  border: var(--verdMesOscur) solid 2px;
+  border: var(--negrot) solid 2px;
   border-radius: 15px;
 }
 
@@ -442,9 +442,9 @@ nav li a{
   padding-left: 100px;
   padding-right: 100px;
   line-height: 1.5;
-  background-color: var(--verdMesOscur);
-  color: var(--verdeMentaClaro);
-  border: var(--verdEsmeralda) solid 6px;
+  background-color: var(--negrot);
+  color: var(--grisClas);
+  border: var(--grisBase) solid 6px;
   border-radius: 10px;
 }
 
@@ -473,9 +473,9 @@ nav li a{
   line-height: 2;
   padding-left: 15px;
   margin: 30px;
-  background-color: var(--verdMesOscur);
-  color: var(--verdeMentaClaro);
-  border: var(--verdEsmeralda) solid 6px;
+  background-color: var(--negrot);
+  color: var(--grisClas);
+  border: var(--grisBase) solid 6px;
   border-radius: 10px;
 }
 
@@ -485,7 +485,7 @@ nav li a{
   height: 30rem;
   margin: 40px;
   padding: 30px;
-  background-color: var(--verdMesOscur);
+  background-color: var(--negrot);
   border-radius: 30px;
 }
 
@@ -510,7 +510,7 @@ nav li a{
   display: block;
   height: calc(100% - 15px);
   width: calc(100% - 15px);
-  background-color: var(--verdPiOscuro);
+  background-color: var(--grisOscur);
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -521,7 +521,7 @@ nav li a{
 .requisits-container{
   margin-top: 7rem;
   margin-bottom: 5rem;
-  border: var(--verdMesOscur) solid 2px;
+  border: var(--negrot) solid 2px;
   border-radius: 15px;
 }
 
@@ -530,9 +530,9 @@ nav li a{
   padding: 80px;
   padding-left: 130px;
   line-height: 1.5;
-  background-color: var(--verdMesOscur);
-  color: var(--verdeMentaClaro);
-  border: var(--verdEsmeralda) solid 6px;
+  background-color: var(--negrot);
+  color: var(--grisClas);
+  border: var(--grisBase) solid 6px;
   border-radius: 10px;
 }
 
@@ -552,9 +552,9 @@ nav li a{
   padding: 10px;
   padding-left: 40px;
   line-height: 1.5;
-  background-color: var(--verdEsmeralda);
-  color: var(--verdMesOscur);
-  border: var(--verdMesOscur) solid 5px;
+  background-color: var(--grisBase);
+  color: var(--negrot);
+  border: var(--negrot) solid 5px;
   border-radius: 15px;
   height: 250px;
   overflow-y: scroll;
@@ -585,7 +585,7 @@ nav li a{
 .Comentaris-container{
   margin-bottom: 2rem;
   margin-top: 2rem;
-  border: var(--verdMesOscur) solid 2px;
+  border: var(--negrot) solid 2px;
   border-radius: 15px;
 }
 
@@ -596,9 +596,9 @@ nav li a{
   padding-right: 100px;
   padding-bottom: 50px;
   line-height: 1.5;
-  background-color: var(--verdMesOscur);
-  color: var(--verdeMentaClaro);
-  border: var(--verdEsmeralda) solid 4px;
+  background-color: var(--negrot);
+  color: var(--grisClas);
+  border: var(--grisBase) solid 4px;
   border-radius: 10px;
 }
 
@@ -606,13 +606,13 @@ nav li a{
   display: flex;
   align-items: center;
   gap: 10px;
-  background: var(--verdeMentaClaro30);
+  background: var(--grisClas30);
   padding: 10px;
   border-radius: 10px;
 }
 
 .boto-play {
-  background: var(--verdPiOscuro);
+  background: var(--grisOscur);
   color: white;
   border: none;
   padding: 5px 10px;
