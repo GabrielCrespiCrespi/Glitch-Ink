@@ -2,65 +2,183 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Aquesta pagina web es sobre el joc Protocol Thyra">
-    <meta name="keywords" content="videojoc, elden ring, zelda, rpg, dark souls, protocol, thyra, protocol thyra, lore, npc, gameplay, trailer">
-    <meta name="author" content="Adrià Rebasa, Adrià Bonin, Gabriel Crespí">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Protocol Thyra">
-    <meta property="og:description"
-        content="Aquesta pagina web es sobre el joc Protocol Thyra">
-    <meta property="og:url" content="">
-    <title>Protocol tyra</title>
-    <link rel="stylesheet" href="style.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Aquesta pagina web es sobre el joc Protocol Thyra">
+   <meta name="keywords"
+      content="videojoc, elden ring, zelda, rpg, dark souls, protocol, thyra, protocol thyra, lore, npc, gameplay, trailer">
+   <meta name="author" content="Adrià Rebasa, Adrià Bonin, Gabriel Crespí">
+   <meta name="robots" content="index, follow">
+   <meta property="og:title" content="Protocol Thyra">
+   <meta property="og:description" content="Aquesta pagina web es sobre el joc Protocol Thyra">
+   <meta property="og:url" content="">
+   <title>Glitch & Ink</title>
+   <link rel="stylesheet" href="style.css"> 
+   <script src="https://kit.fontawesome.com/4fdac37846.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body class="grid">
-   <header class="header">
-      <img src="/recursos/logo.svg" alt="Protocol Thyra Logo" class="logo">
-      <nav class = "nav">
-         <ul class="navList">
-            <li><a>Home <img src = "recursos/icons/home.svg" class = "icon"></a></li>
-            <li><a>Lore <img src = "recursos/icons/book.svg" class = "icon"></a></li>
-            <li><a>NPCs <img src = "recursos/icons/person.svg" class = "icon"></a></li>
-            <li><a>Req. <img src = "recursos/icons/computer.svg" class = "icon"></a></li>
-            <li><a>Com. <img src = "recursos/icons/comments.svg" class = "icon"></a></li>
-            <li><a>About <img src = "recursos/icons/about.svg" class = "icon"></a></li>
-            <li><a>Class. <img src = "recursos/icons/leaderboard.svg" class = "icon"></a></li>
-         </ul>
-      </nav>
-   </header>
-   <section class="body">
 
-      <div id="micontador" data-final="2025/05/05"> <!--contador -->
-         <div class="num">
-            <div class="dig"><span>&nbsp;</span></div>
-            <div class="label">Días</div>
+   <div id="progress">
+      <span id="progress-value" class="fa-solid fa-arrow-up"></span>
+   </div>
+
+   <header class="header">
+      <h1>Glitch & Ink</h1>
+   </header>
+
+   <section class="body">
+      <nav>
+         <ol>
+            <li class="active"><a href="index.html"><img src="recursos\icons\home.svg">
+                  <p>Inici</p>
+               </a>
+            </li>
+            <li><a href="lore.html"><img src="recursos\icons\book.svg">
+                  <p>Lore</p>
+               </a>
+            </li>
+            <li><a href="npcs.html"><img src="recursos\icons\person.svg">
+                  <p>NPCs</p>
+               </a>
+            </li>
+            <li><a href="comentaris.html"><img src="recursos\icons\comments.svg">
+                  <p>Comentaris</p>
+               </a>
+            </li>
+            <li><a href="about_us.html"><img src="recursos\icons\about.svg">
+                  <p>About Us</p>
+               </a>
+            </li>
+            <li><a href="classificacio.html"><img src="recursos\icons\leaderboard.svg">
+                  <p>Classificació</p>
+               </a>
+            </li>
+         </ol>
+      </nav>
+
+      <div class="countdown-timer">
+         <ul class="countdown-timer-ul">
+            <p class="deadline-label">Maig 26</p>
+            <div class="countainer-ul">
+               <li class="date-item"><span class="days">0</span>Dies</li>
+               <li class="date-item"><span class="hours">0</span>Hores</li>
+               <li class="date-item"><span class="minutes">0</span>Minuts</li>
+               <li class="date-item"><span class="seconds">0</span>Segons</li>
+            </div>
+         </ul>
+      </div>
+
+      <h2 class = "title">El Joc</h2>
+      <div id="carrusel">
+         <div class="conteCarrusel">
+            <div class="itemCarrusel" id="itemCarrusel-1">
+               <div class="tarjetaCarrusel" id="tarjetaCarrusel-1">
+                  <img src="/recursos/imatges/PozoPetroleo.PNG" alt="">
+               </div>
+               <div class="fletchesCarrusel">
+                  <a href="#itemCarrusel-3" onclick="scrollToElement(event, 'itemCarrusel-3')">
+                     <i class="fa-solid fa-caret-left"></i>
+                  </a>
+                  <a href="#itemCarrusel-2" onclick="scrollToElement(event, 'itemCarrusel-2')">
+                     <i class="fa-solid fa-caret-right"></i>
+                  </a>
+               </div>
+            </div>
+            <div class="itemCarrusel" id="itemCarrusel-2">
+               <div class="tarjetaCarrusel" id="tarjetaCarrusel-2">
+                  <img src="/recursos/imatges/Spawner.PNG" alt="">
+               </div>
+               <div class="fletchesCarrusel">
+                  <a href="#itemCarrusel-1" onclick="scrollToElement(event, 'itemCarrusel-1')">
+                     <i class="fa-solid fa-caret-left"></i>
+                  </a>
+                  <a href="#itemCarrusel-3" onclick="scrollToElement(event, 'itemCarrusel-3')">
+                     <i class="fa-solid fa-caret-right"></i>
+                  </a>
+               </div>
+            </div>
+            <div class="itemCarrusel" id="itemCarrusel-3">
+               <div class="tarjetaCarrusel" id="tarjetaCarrusel-3">
+                  <img src="/recursos/imatges/Torreta.PNG" alt="">
+               </div>
+               <div class="fletchesCarrusel">
+                  <a href="#itemCarrusel-2" onclick="scrollToElement(event, 'itemCarrusel-2')">
+                     <i class="fa-solid fa-caret-left"></i>
+                  </a>
+                  <a href="#itemCarrusel-1" onclick="scrollToElement(event, 'itemCarrusel-1')">
+                     <i class="fa-solid fa-caret-right"></i>
+                  </a>
+               </div>
+            </div>
          </div>
-         <div class="num">
-            <div class="dig"><span>&nbsp;</span></div>
-            <div class="label">Horas</div>
-         </div>
-         <div class="num">
-            <div class="dig"><span>&nbsp;</span></div>
-            <div class="label">Min</div>
-         </div>
-         <div class="num">
-            <div class="dig"><span>&nbsp;</span></div>
-            <div class="label">Seg</div>
+         <div class="conteCarruselController">
+            <a href="#itemCarrusel-1" onclick="scrollToElement(event, 'itemCarrusel-1')">
+               <i class="fa-solid fa-circle"></i>
+            </a>
+            <a href="#itemCarrusel-2" onclick="scrollToElement(event, 'itemCarrusel-2')">
+               <i class="fa-solid fa-circle"></i>
+            </a>
+            <a href="#itemCarrusel-3" onclick="scrollToElement(event, 'itemCarrusel-3')">
+               <i class="fa-solid fa-circle"></i>
+            </a>
          </div>
       </div>
 
+      <div class="blog-container">
+         <div class="blog-box">
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit nisi condimentum accumsan habitasse, dictumst
+               tristique morbi turpis libero parturient ut porttitor egestas elementum interdum bibendum, imperdiet
+               augue
+               eros aliquam est senectus in sagittis duis cubilia. Habitasse dignissim purus proin praesent urna, augue
+               cras rhoncus inceptos fusce, quisque curabitur neque vitae. Dictumst parturient mauris imperdiet
+               accumsan ad
+               integer primis interdum, hendrerit ornare in sollicitudin libero fermentum quisque, vulputate blandit
+               suspendisse felis aenean urna gravida himenaeos, fusce sagittis dictum dis platea vehicula.
+
+               Luctus accumsan hendrerit varius velit elementum convallis, nulla sagittis condimentum cras dignissim
+               proin
+               arcu, magnis volutpat integer sodales ante. Laoreet gravida sociosqu auctor lobortis placerat mollis
+               eleifend erat, vulputate phasellus convallis id molestie inceptos taciti metus, dis tortor suscipit cras
+               ornare ullamcorper accumsan. Pulvinar mauris et inceptos venenatis cum blandit habitasse interdum
+               dictum,
+               elementum turpis nibh curabitur varius molestie non rutrum fames, commodo sed vulputate aliquam nunc nec
+               potenti mi.
+            </p>
+
+         </div>
+      </div>
+
+      <div class="capsa_link">
+         <button onclick="comprovant()" class="link_capsa link">
+            <span>Link per jugar al joc</span>
+         </button>
+      </div>
+
    </section>
+
    <aside class="aside_dreta">
 
+      <audio id="audioEpic" loop >
+         <source src="Musica\CançoEpica.mp3" type="audio/mpeg">
+      </audio>
+
+      <div class="audio-player">
+         <button onclick="pausar()" class="boto-play" id="playPause">▶️</button>
+         <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+     </div>
    </aside>
+
+   <aside class="aside_esquerra">
+
+   </aside>
+
    <footer class="footer">
 
    </footer>
 
+   <script src="script.js"></script>
 </body>
 
 </html>
