@@ -51,4 +51,4 @@ async function carregarClasificacions() {
 
 carregarClasificacions();
 
-setInterval(cargarClasificaciones, 300000); 
+setInterval(carregarClasificacions, 300000); 
