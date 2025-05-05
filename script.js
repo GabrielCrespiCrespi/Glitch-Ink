@@ -1,4 +1,4 @@
-const expirationDate = 'May 28, 2025 23:59:59'; // Aqui va la data final del timer
+const expirationDate = 'May 6, 2025 10:00:00'; // Aqui va la data final del timer
 let deadlineTime = new Date(expirationDate);
 
 deadlineTime.setDate(deadlineTime.getDate());
@@ -82,22 +82,3 @@ let calcScrollValue = () => {
 
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
-
-//funcion per silenciar la musica i canviar el volum
-const audio = document.getElementById("audioEpic");
-const playPause = document.getElementById("playPause");
-const volume = document.getElementById("volume");
-
-function pausar() {
-  if (audio.paused) {
-    audio.play();
-    playPause.textContent = "⏸️";
-  } else {
-    audio.pause();
-    playPause.textContent = "▶️";
-  }
-};
-
-volume.addEventListener("input", () => {
-  audio.volume = volume.value;
-});

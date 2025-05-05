@@ -530,7 +530,7 @@ input[type="range"] {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: var(--lila);
+  background-color: var(--grisOscur);
   border-radius: 10px;
 }
 
@@ -542,9 +542,11 @@ input[type="range"] {
   margin: 2rem auto;
   max-width: 1000px;
 }
+
 #clasificaciones {
   margin: 1rem 0;
 }
+
 .clasificacion {
   display: flex;
   justify-content: space-between;
@@ -557,18 +559,22 @@ input[type="range"] {
   color: var(--grisClas);
   transition: transform 0.3s, background-color 0.3s;
 }
+
 .clasificacion:hover {
   transform: scale(1.02);
   background-color: var(--grisOscur);
 }
+
 .clasificacion .nombre {
   font-size: clamp(1rem, 2.5vw, 1.2rem);
   font-weight: bold;
 }
+
 .clasificacion .puntos {
   font-size: clamp(1rem, 2.5vw, 1.2rem);
   color: var(--blancGris);
 }
+
 .info {
   text-align: center;
   color: var(--grisClas);
