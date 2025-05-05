@@ -170,8 +170,13 @@ nav ol p {
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .capsa_link {
@@ -189,7 +194,7 @@ nav ol p {
   text-align: center;
 }
 
-.link_capsa > span {
+.link_capsa>span {
   font-size: clamp(1rem, 3vw, 1.5rem);
 }
 
@@ -223,7 +228,7 @@ nav ol p {
   position: relative;
 }
 
-.tarjetaCarrusel > img {
+.tarjetaCarrusel>img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -241,14 +246,14 @@ nav ol p {
   padding: 0 1rem;
 }
 
-.fletchesCarrusel > a {
+.fletchesCarrusel>a {
   text-decoration: none;
   font-size: clamp(1.2rem, 3vw, 1.8rem);
   color: var(--blancGris);
   transition: transform 0.2s ease;
 }
 
-.fletchesCarrusel > a:hover {
+.fletchesCarrusel>a:hover {
   transform: scale(1.2);
 }
 
@@ -259,13 +264,13 @@ nav ol p {
   margin-top: 0.8rem;
 }
 
-.conteCarruselController > a {
+.conteCarruselController>a {
   text-decoration: none;
   color: var(--blancGris);
   font-size: clamp(0.6rem, 1.5vw, 0.8rem);
 }
 
-.conteCarruselController > a:hover {
+.conteCarruselController>a:hover {
   color: var(--grisOscur);
 }
 
@@ -297,8 +302,13 @@ nav ol p {
 }
 
 @keyframes slide {
-  from { transform: translateX(0); }
-  to { transform: translateX(-100%); }
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 .card-list .card-item {
@@ -524,6 +534,48 @@ input[type="range"] {
   border-radius: 10px;
 }
 
+.container {
+  background-color: var(--grisBase);
+  border: 2px solid var(--negrot);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  max-width: 1000px;
+}
+#clasificaciones {
+  margin: 1rem 0;
+}
+.clasificacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  margin: 0.5rem 0;
+  background-color: var(--negrot);
+  border: 2px solid var(--grisBase);
+  border-radius: 8px;
+  color: var(--grisClas);
+  transition: transform 0.3s, background-color 0.3s;
+}
+.clasificacion:hover {
+  transform: scale(1.02);
+  background-color: var(--grisOscur);
+}
+.clasificacion .nombre {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-weight: bold;
+}
+.clasificacion .puntos {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  color: var(--blancGris);
+}
+.info {
+  text-align: center;
+  color: var(--grisClas);
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  margin-top: 1rem;
+}
+
 @media (min-width: 768px) {
   nav ol {
     gap: 1rem;
@@ -584,11 +636,11 @@ input[type="range"] {
     max-height: 300px;
   }
 
-  .fletchesCarrusel > a {
+  .fletchesCarrusel>a {
     font-size: clamp(0.8rem, 2.5vw, 1rem);
   }
 
-  .conteCarruselController > a {
+  .conteCarruselController>a {
     font-size: clamp(0.5rem, 1.5vw, 0.7rem);
   }
 
@@ -599,14 +651,14 @@ input[type="range"] {
     border-bottom: 1px solid #ccc;
     font-size: 1.1em;
     color: #fff;
-}
+  }
 
-.clasificacion .nombre {
+  .clasificacion .nombre {
     font-weight: bold;
-}
+  }
 
-.clasificacion .puntos {
+  .clasificacion .puntos {
     color: #f0c674;
-}
+  }
 
 }
