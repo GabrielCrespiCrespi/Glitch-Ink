@@ -13,50 +13,8 @@
     <title>Classificació</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/4fdac37846.js" crossorigin="anonymous"></script>
-    <style>
-        .container {
-            background-color: var(--grisBase);
-            border: 2px solid var(--negrot);
-            border-radius: 10px;
-            padding: 1.5rem;
-            margin: 2rem auto;
-            max-width: 1000px;
-        }
-        #clasificaciones {
-            margin: 1rem 0;
-        }
-        .clasificacion {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0.8rem 1rem;
-            margin: 0.5rem 0;
-            background-color: var(--negrot);
-            border: 2px solid var(--grisBase);
-            border-radius: 8px;
-            color: var(--grisClas);
-            transition: transform 0.3s, background-color 0.3s;
-        }
-        .clasificacion:hover {
-            transform: scale(1.02);
-            background-color: var(--grisOscur);
-        }
-        .clasificacion .nombre {
-            font-size: clamp(1rem, 2.5vw, 1.2rem);
-            font-weight: bold;
-        }
-        .clasificacion .puntos {
-            font-size: clamp(1rem, 2.5vw, 1.2rem);
-            color: var(--blancGris);
-        }
-        .info {
-            text-align: center;
-            color: var(--grisClas);
-            font-size: clamp(0.8rem, 2vw, 1rem);
-            margin-top: 1rem;
-        }
-    </style>
 </head>
+
 <body class="grid">
     <div id="progress">
         <span id="progress-value" class="fa-solid fa-arrow-up"></span>
@@ -74,6 +32,7 @@
             <li class="active"><a href="classificacio.html"><img src="recursos/icons/leaderboard.svg"><p>Classificació</p></a></li>
         </ol>
     </nav>
+
     <main class="body">
         <div class="container">
             <h1 class="title">Classificacions</h1>
@@ -83,31 +42,8 @@
             <p class="info">Actualització automàtica cada 5 minuts</p>
         </div>
     </main>
+
     <script src="script.js"></script>
-    <script>
-        async function cargarClasificaciones() {
-            const url = "https://phpstack-1076337-5399863.cloudwaysapps.com/api/classification/pHJNhm719MN5LCVqE839lOse0qvlbL1lBXndZmAWoJfiPXZFQHmgNQrzUHYS";
-            const contenedor = document.getElementById("clasificaciones");
-            try {
-                const response = await fetch(url);
-                const data = await response.json();
-                contenedor.innerHTML = "";
-                data.data.forEach(item => {
-                    const fila = document.createElement("div");
-                    fila.className = "clasificacion";
-                    fila.innerHTML = `
-                        <span class="nombre">${item.name}</span>
-                        <span class="puntos">${item.points} pts</span>
-                    `;
-                    contenedor.appendChild(fila);
-                });
-            } catch (error) {
-                contenedor.innerHTML = `<p style="text-align:center; color: var(--rosaFucsia);">Error al carregar dades</p>`;
-                console.error("Error:", error);
-            }
-        }
-        cargarClasificaciones();
-        setInterval(cargarClasificaciones, 300000); // cada 5 minuts
-    </script>
+    <script src="classificacio.js"></script>
 </body>
 </html>
