@@ -50,7 +50,7 @@ function comprovant() {
     alert("Beneit");
   } else {
     window.location.href =
-      ""; //Aqui anira u link de la pagina web
+      "https://itch.io/"; //Aqui anira u link de la pagina web
   };
 };
 
