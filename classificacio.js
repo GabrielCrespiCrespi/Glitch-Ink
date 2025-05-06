@@ -1,5 +1,5 @@
 async function obtenirClasificacions() {
-    const url = "https://phpstack-1076337-5399863.cloudwaysapps.com/api/classification/pHJNhm719MN5LCVqE839lOse0qvlbL1lBXndZmAWoJfiPXZFQHmgNQrzUHYS";
+    const url = "https://phpstack-1076337-5399863.cloudwaysapps.com/api/classification/UN055LmAO0OohtenSN8h0y4gB40wsRTYVZq1OkEOOpIukOXrxjKjeUV7Ftbq";
     try {
         const resposta = await fetch(url);
         const dades = await resposta.json();
