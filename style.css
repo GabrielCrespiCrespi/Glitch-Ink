@@ -187,19 +187,20 @@ nav ol p {
 }
 
 .link_capsa {
-  border: 2px solid var(--grisClas);
+  border: 3px solid var(--negrot);
   border-radius: 25px;
   padding: 0.5rem 2rem;
-  background-color: var(--rosaChilero);
+  background-color: var(--blancGris);
   text-align: center;
 }
 
 .link_capsa>span {
+  font-family: 'WoodenNickelBlack';
   font-size: clamp(1rem, 3vw, 1.5rem);
 }
 
 .link {
-  color: var(--grisClas);
+  color: var(--negrot);
   font-size: clamp(0.9rem, 2.5vw, 1.2rem);
   cursor: pointer;
 }
@@ -530,7 +531,7 @@ input[type="range"] {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: var(--grisOscur);
+  background-color: var(--grisClas);
   border-radius: 10px;
 }
 
