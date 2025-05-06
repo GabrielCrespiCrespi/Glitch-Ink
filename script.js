@@ -50,7 +50,7 @@ function comprovant() {
     alert("Beneit");
   } else {
     window.location.href =
-      ""; //Aqui anira u link de la pagina web
+      "https://itch.io/"; //Aqui anira u link de la pagina web
   };
 };
 
@@ -77,7 +77,7 @@ let calcScrollValue = () => {
   scrollProgress.addEventListener("click", () => {
     document.documentElement.scrollTop = 0;
   });
-  scrollProgress.style.background = `conic-gradient( #8402a5 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+  scrollProgress.style.background = `conic-gradient(rgb(25, 24, 26) ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
 };
 
 window.onscroll = calcScrollValue;
