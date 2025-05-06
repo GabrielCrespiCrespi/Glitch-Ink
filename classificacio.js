@@ -4,6 +4,11 @@ async function obtenirClasificacions() {
         const resposta = await fetch(url);
         const dades = await resposta.json();
 
+
+
+
+
+        
         if (!Array.isArray(dades?.data)) {
             throw new Error("Format de dades invàlid");
         }
